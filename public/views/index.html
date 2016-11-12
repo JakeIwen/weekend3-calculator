@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="client.js"></script>
+</head>
+<body>
+  <h1>Backend Calculator</h1>
+  <h2>Enter your numbers and choose the operation.</h2>
+  <form id="numbers">
+    <label for="num1">First Number:</label>
+    <input type="number" id="num1" />
+
+    <label for="num2">Second Number:</label>
+    <input type="number" id="num2" />
+    <br />
+    <div>
+      <button class = "mathOp" id="addi">Add</button>
+      <button class = "mathOp" id="subtr">Subtract</button>
+      <button class = "mathOp" id="multi">Multiply</button>
+      <button class = "mathOp" id="divi">Divide</button>
+    </div>
+    <div>
+      <button class="clear">Clear</button>
+    </div>
+  </form>
+  <div>
+    <h4>
+      Answer: <span></span>
+    </h4>
+  </div>
+
+</body>
+</html>
