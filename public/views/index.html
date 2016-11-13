@@ -9,29 +9,46 @@
 </head>
 <body>
   <h1>Backend Calculator</h1>
-  <h2>Enter your numbers and choose the operation.</h2>
-  <form id="numbers">
-    <label for="num1">First Number:</label>
-    <input type="number" id="num1" />
-
-    <label for="num2">Second Number:</label>
-    <input type="number" id="num2" />
-    <br />
-    <div>
-      <button class = "mathOp" id="addi">Add</button>
-      <button class = "mathOp" id="subtr">Subtract</button>
-      <button class = "mathOp" id="multi">Multiply</button>
-      <button class = "mathOp" id="divi">Divide</button>
-    </div>
-    <div>
-      <button class="clear">Clear</button>
-    </div>
-  </form>
-  <div>
-    <h4>
-      Answer: <span></span>
-    </h4>
-  </div>
-
+  <table>
+  	<tbody><tr><td id="sciout">
+  		<div>
+  			<div id="sciOutPut"> </div>
+  		</div>
+  		<div style="padding-top:3px;">
+  			<div>
+          <span class="numIn">7</span>
+          <span class="numIn">8</span>
+          <span class="numIn">9</span>
+          <span id="addi" class="mathOp">+</span>
+        </div>
+  			<div>
+          <span class="numIn">4</span>
+          <span class="numIn">5</span>
+          <span class="numIn">6</span>
+          <span id="subtr" class="mathOp">–</span>
+        </div>
+  			<div>
+          <span class="numIn">1</span>
+          <span class="numIn">2</span>
+          <span class="numIn">3</span>
+          <span id="multi" class="mathOp">×</span>
+        </div>
+  			<div>
+          <span class="numIn">0</span>
+          <span class="numIn">.</span>
+          <span id="exp" class="mathOp">EXP</span>
+          <span id="divi" class="mathOp">÷</span>
+        </div>
+  			<div>
+          <span id="flip" class="mathOp">±</span>
+          <span id="sqrt" class="mathOp">√x</span>
+          <span id="clr" class="resolve">C</span>
+          <span id="solve" class="resolve">=</span>
+        </div>
+  		</div>
+  	</td>
+  </tr>
+</tbody>
+</table>
 </body>
 </html>

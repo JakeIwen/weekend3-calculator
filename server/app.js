@@ -30,27 +30,3 @@ app.use(express.static('./public/scripts'));
 app.listen(port);
 app.get('/', index);
 console.log("Listening on port: ", port);
-
-
-
-
-// switch (mathData.type) {
-//   case 'addi':
-//   //  answer.a = calc.addi(mathData)
-//     //answer = addi(mathData);
-//     //answer.a = Number(mathData.x) + Number(mathData.y);
-//   break;
-//   case 'subtr':
-//     //answer = subtr(mathData);
-//     answer.a = Number(mathData.x) - Number(mathData.y);
-//   break;
-//   case 'multi':
-//     //answer = multi(mathData);
-//     answer.a = Number(mathData.x) * Number(mathData.y);
-//   break;
-//   case 'divi':
-//     //answer = divi(mathData);
-//     answer.a = Number(mathData.x) / Number(mathData.y);
-//   break;
-//   default: answer.a = null;
-// }
