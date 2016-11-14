@@ -26,4 +26,3 @@ module.exports.multi = multi;
 module.exports.divi = divi;
 module.exports.exp = exp;
 module.exports.sqrt = sqrt;
-//module.exports = subtr;

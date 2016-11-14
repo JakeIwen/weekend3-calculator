@@ -1,56 +1,41 @@
+
+body{
+	font-family: Roboto;
+}
+.row{
+	margin:6px;
+}
+.col-sm-3{
+	border:6px;
+}
 #sciout{
-	padding:5px;
-	border-top:1px solid #262626;
-	border-left:1px solid #262626;
-	border-right:2px outset #262626;
-	border-bottom:2px outset #262626;
 	background: #eeeeee;
 }
-#sciOutPut{
+#outPut{
 	font-size:18px;
-  height: 1em;
-	padding:3px;
-	margin:2px;
+	font-weight:bold;
+	padding: 3px;
+  height: 1.5em;
+	margin: 6px;
 	cursor:text;
+	border: 1px solid black;
 	text-align:right;
-	background-color:#B8C6A3;
-	border:1px solid #87996b;
-	border-radius: 3px;
+	background-color:#8da36c;
+	border-radius: 10px;
 	color:#000;
 }
-.scifunc{
-	display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	text-align:center;
-	width:50px;
-	height:25px;
-	margin:1px;
-	border:1px solid #262626;
-	border-radius: 3px;
-	font-family:arial,helvetica,sans-serif;
-	font-size:24px;
-	font-weight:bold;
-	color:#185290;
-	background-color:#C8D8E8;
-}
-.scifunc:active {
-	background-color:#013f7d;
-	color:#ffffff;
+.calcBody{
+	border:3px solid black;
+	border-radius: 12px;
+	background-color: rgba(38, 210, 233, 0.49);
 }
 .numIn{
-	display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	padding: 5px 0px;
 	text-align:center;
-	width:50px;
-	height:30px;
-	margin:1px;
-	border:1px solid #262626;
-	border-radius: 3px;
-	font-family:arial,helvetica,sans-serif;
-	font-size:20px;
+	vertical-align: middle;
+	height:45px;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size:1.5em;
 	font-weight:bold;
 	color:#FFF;
 	background-color:#262626;
@@ -60,18 +45,13 @@
 	color:#000000;
 }
 .mathOp{
-	display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	padding: 5px 0px;
 	text-align:center;
-	width:50px;
-	height:30px;
-	margin:1px;
-	border:1px solid #262626;
-	border-radius: 3px;
-	font-family:arial,helvetica,sans-serif;
-	font-size:20px;
+	vertical-align: middle;
+	padding: 4px;
+	height:45px;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size:1.3em;
 	font-weight:bold;
 	color:#262626;
 	background-color:#ccc;
@@ -80,31 +60,12 @@
 	background-color:#000000;
 	color:#ffffff;
 }
-.scird{
-	display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	text-align:center;
-	height:30px;
-	margin:1px;
-	border:1px solid #eeeeee;
-	border-radius: 3px;
-	font-family:arial,helvetica,sans-serif;
-	font-size:13px;
-	color:#262626;
-}
 .resolve{
-	display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	padding: 5px 0px;
 	text-align:center;
-	width:50px;
-	height:30px;
-	margin:1px;
-	border:1px solid #262626;
-	border-radius: 3px;
-	font-family:arial,helvetica,sans-serif;
+	vertical-align: middle;
+	height:45px;
+	border: 1px solid black;
+	border-radius: 10px;
 	font-size:20px;
 	font-weight:bold;
 	color:#F00;

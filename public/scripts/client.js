@@ -33,7 +33,7 @@ function appendDom() {
     url: '/result',
     success: function(result){
       console.log('answer success');
-      $('#sciOutPut').text(result.a);
+      $('#outPut').text(result.a);
     },
     error: function(error){
       console.log('did not get result ', error);
@@ -58,37 +58,37 @@ function postData() {
 }
 
 function solve() {
-  mathData.y = Number($('#sciOutPut').text());
+  mathData.y = Number($('#outPut').text());
   postData();
 }
 
 function type(op) {
   mathData.type = op;
   console.log(mathData.type);
-  mathData.x = Number($('#sciOutPut').text());
+  mathData.x = Number($('#outPut').text());
   if(mathData.type == 'sqrt') {
     solve();
   }
 }
 function flip() {
-  var neg = -1 * Number($('#sciOutPut').text());
-  $('#sciOutPut').text(neg);
+  var neg = -1 * Number($('#outPut').text());
+  $('#outPut').text(neg);
 }
 function clr() {
-  $('#sciOutPut').text('0');
+  $('#outPut').text('0');
   mathData = {};
 }
 
 function numIn(val) {
   console.log(mathData.type);
-  var out = $('#sciOutPut').text(); //visible on calc screen
+  var out = $('#outPut').text(); //visible on calc screen
   //remove previous number or default zero before appending
   if(out == '0' || mathData.x == out) {
-    $('#sciOutPut').text(null);
+    $('#outPut').text(null);
   }
   //dont allow multiple decimal points
   if(!(out.includes('.') && val == '.')) {
-    $('#sciOutPut').append(val);
+    $('#outPut').append(val);
   }
 
 }

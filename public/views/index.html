@@ -3,52 +3,56 @@
 <head>
   <meta charset="utf-8">
   <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel='stylesheet'>
   <script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="client.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-  <h1>Backend Calculator</h1>
-  <table>
-  	<tbody><tr><td id="sciout">
-  		<div>
-  			<div id="sciOutPut"> </div>
-  		</div>
-  		<div style="padding-top:3px;">
-  			<div>
-          <span class="numIn">7</span>
-          <span class="numIn">8</span>
-          <span class="numIn">9</span>
-          <span id="addi" class="mathOp">+</span>
-        </div>
-  			<div>
-          <span class="numIn">4</span>
-          <span class="numIn">5</span>
-          <span class="numIn">6</span>
-          <span id="subtr" class="mathOp">–</span>
-        </div>
-  			<div>
-          <span class="numIn">1</span>
-          <span class="numIn">2</span>
-          <span class="numIn">3</span>
-          <span id="multi" class="mathOp">×</span>
-        </div>
-  			<div>
-          <span class="numIn">0</span>
-          <span class="numIn">.</span>
-          <span id="exp" class="mathOp">EXP</span>
-          <span id="divi" class="mathOp">÷</span>
-        </div>
-  			<div>
-          <span id="flip" class="mathOp">±</span>
-          <span id="sqrt" class="mathOp">√x</span>
-          <span id="clr" class="resolve">C</span>
-          <span id="solve" class="resolve">=</span>
-        </div>
-  		</div>
-  	</td>
-  </tr>
-</tbody>
-</table>
+<div class="container">
+  <div class="row">
+    <h1>Backend Calculator</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-4 calcBody">
+      <div class="row" id="outPut"></div>
+			<div class="row">
+        <div class="col-sm-3 numIn">7</div>
+        <div class="col-sm-3 numIn">8</div>
+        <div class="col-sm-3 numIn">9</div>
+        <div id="addi" class="col-sm-3 mathOp">+</div>
+      </div>
+			<div class="row">
+        <div class="col-sm-3 numIn">4</div>
+        <div class="col-sm-3 numIn">5</div>
+        <div class="col-sm-3 numIn">6</div>
+        <div id="subtr" class="col-sm-3 mathOp">–</div>
+      </div>
+			<div class="row">
+        <div class="col-sm-3 numIn">1</div>
+        <div class="col-sm-3 numIn">2</div>
+        <div class="col-sm-3 numIn">3</div>
+        <div id="multi" class="col-sm-3 mathOp">×</div>
+      </div>
+			<div class="row">
+        <div class="col-sm-3 numIn">0</div>
+        <div class="col-sm-3 numIn">.</div>
+        <div id="exp" class="col-sm-3 mathOp">exp</div>
+        <div id="divi" class="col-sm-3 mathOp">÷</div>
+      </div>
+			<div class="row">
+        <div id="flip" class="col-sm-3 mathOp">±</div>
+        <div id="sqrt" class="col-sm-3 mathOp">√x</div>
+        <div id="clr" class="col-sm-3 resolve">C</div>
+        <div id="solve" class="col-sm-3 resolve">=</div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
