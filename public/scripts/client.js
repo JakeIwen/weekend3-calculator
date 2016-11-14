@@ -1,13 +1,13 @@
 var mathData = {};
-
 $(document).ready(function(){
-  clr();
+  clr(); //empty mathData, put '0' in display
 
+  //Number-key inputs
   $('.numIn').on('click', function(){
-    event.preventDefault();
      numIn($(this).text());
   });
 
+  //Operator inputs
   $('.mathOp').on('click', function(){
     var op = $(this).attr('id');
     if(op == 'flip') {
@@ -17,6 +17,7 @@ $(document).ready(function(){
     }
   });
 
+  //Clear or '='
   $('.resolve').on('click', function(){
     var eq = $(this).attr('id');
     if(eq == 'solve') {
@@ -32,8 +33,8 @@ function appendDom() {
     type: 'GET',
     url: '/result',
     success: function(result){
-      console.log('answer success');
-      $('#outPut').text(result.a);
+      //display value of answer section of object
+      $('#outPut').text(result.ans);
     },
     error: function(error){
       console.log('did not get result ', error);
@@ -70,10 +71,12 @@ function type(op) {
     solve();
   }
 }
+//flip sign of current input. Executed on clent side for simplicity
 function flip() {
   var neg = -1 * Number($('#outPut').text());
   $('#outPut').text(neg);
 }
+//resets DOM
 function clr() {
   $('#outPut').text('0');
   mathData = {};

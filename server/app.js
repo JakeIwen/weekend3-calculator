@@ -11,17 +11,18 @@ app.use(bodyParser.json());
 
 app.post('/mathData', function(req, res) {
   mathData = req.body;
+  //create a string to evaluate based on operation type
   calcString = 'calc.' + mathData.type + '(mathData)';
-
-  mathData.a = eval(calcString);
-
+  //add answer to object
+  mathData.ans = eval(calcString);
   console.log(calcString);
   console.log('mathdata: ', mathData);
+
   res.sendStatus(201);
 });
 
 app.get('/result', function(req, res) {
-  console.log('res send');
+  //send object with answer to client
   res.send(mathData);
 });
 
